@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="goToCDSApp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/mailerId"
+        android:layout_width="217dp"
+        android:layout_height="78dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Email"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="84dp" />
+
+    <Button
+        android:id="@+id/sendMailId"
+        android:layout_width="230dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:onClick="sendEmail"
+        android:text="Send"
+        app:layout_constraintTop_toBottomOf="@+id/switch1"
+        tools:layout_editor_absoluteX="90dp" />
+
+    <Button
+        android:id="@+id/btn_thread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startThread"
+        android:text="Thread Try"
+        app:layout_constraintTop_toBottomOf="@+id/mailerId"
+        tools:layout_editor_absoluteX="134dp" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="106dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="92dp"
+        android:text="Switch"
+        app:layout_constraintTop_toBottomOf="@+id/mailerId"
+        tools:layout_editor_absoluteX="134dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:onClick="goToCDSApp"
+        android:text="Go to CDS App"
+        app:layout_constraintTop_toBottomOf="@+id/sendMailId"
+        tools:layout_editor_absoluteX="130dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+

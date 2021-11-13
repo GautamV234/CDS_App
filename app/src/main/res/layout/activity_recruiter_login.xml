@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="recruiter_verified_mail"
+    tools:context=".Recruiter_FirstTime">
+
+    <TextView
+        android:id="@+id/newRecruiter"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="#EDB4B4"
+        android:text="NEW RECRUITER"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/txt_firstTimeEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/newRecruiter"
+        tools:layout_editor_absoluteX="100dp" />
+
+    <Button
+        android:id="@+id/btn_getVerified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:onClick="new_recruiter_mail"
+        android:text="Get Verified"
+        app:layout_constraintTop_toBottomOf="@+id/txt_firstTimeEmail"
+        tools:layout_editor_absoluteX="138dp" />
+
+    <TextView
+        android:id="@+id/existingUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:background="#EDB4B4"
+        android:text="Existing User"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintTop_toBottomOf="@+id/btn_getVerified"
+        tools:layout_editor_absoluteX="145dp" />
+
+    <EditText
+        android:id="@+id/txt_loginEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/existingUser"
+        tools:layout_editor_absoluteX="100dp" />
+
+    <EditText
+        android:id="@+id/txt_loginPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/txt_loginEmail"
+        tools:layout_editor_absoluteX="100dp" />
+
+    <Button
+        android:id="@+id/btn_logIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:onClick="login"
+        android:text="Log in"
+        app:layout_constraintTop_toBottomOf="@+id/txt_loginPassword"
+        tools:layout_editor_absoluteX="161dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
