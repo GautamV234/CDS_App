@@ -19,7 +19,7 @@ public class Recruiter_Login extends AppCompatActivity {
     EditText txt_loginPassword;
     Button btn_getVerified;
     Button btn_logIn;
-
+//    test1
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
